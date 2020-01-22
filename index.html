@@ -1,39 +1,39 @@
 <html>
 <head>
 <style>
-div.navBar {
+nav {
     background-color:dodgerBlue;
-    display: flex;
     width: 100%;
     height: 100px;
+    padding:1rem;
+    display:flex;
     justify-content:space-around;
     align-items:center;
-}
-.title{
-    display:flex;
-    justify-content:flex-start;
-}
-.navBar {
     font-size:36;
     color: white;
     font-family: verdana;
 }
-.navItem {
+nav a {
     font-size:12;
     color: white;
     font-family: verdana;
+    text-decoration: none;
+}
+nav a:first-child {
+    font-size:36;
+}
+a.selected{
+    font-weight:bold;
 }
 
 </style>
 </head>
 <body>
-<main>
-<div class='navBar'>
-    <div class='title'>Acme Layout</div>
-    <div class='navItem'>Users</div>
-    <div class='navItem'>Departments</div>
-    <div class='navItem'>Contact</div>
-</div>
-</main>
+<nav>
+    <a href="#">Acme Layout</a>
+        <a href="#">Users</a>
+        <a href="#">Departments</a>
+        <a href="#">Contact</a>
+</nav>
 </body>
 </html>
