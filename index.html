@@ -25,15 +25,42 @@ nav a:first-child {
 a.selected{
     font-weight:bold;
 }
+body{
+    color:gray;
+    font-family: verdana;
+    font-size:26;
+    font-weight:bold;
+    display:flex;
+    flex-wrap:wrap;
+    justify-contents:center;
+}
+
+.mainForm{
+    border-radius:50px;
+    border: solid 1px gray;
+    width:25%;
+    height:auto;
+    
+}
 
 </style>
 </head>
-<body>
 <nav>
     <a href="#">Acme Layout</a>
         <a href="#">Users</a>
         <a href="#">Departments</a>
         <a href="#">Contact</a>
 </nav>
+<p>Users</p>
+<body>
+<div class='mainForm'>
+    <select>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+    </select>
+</div>
+
 </body>
 </html>
